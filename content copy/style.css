@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle, #000000 5%, #222233 100%);
+    margin: 0;
+    padding: 100px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    background-image: url('cover.png'); /* Replace with your image link */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: transparent; /* Make background color transparent */
+}
+
+.preview h2 {
+    color: rgb(255, 255, 255); /* Set text color to white */
+    margin-bottom: 10px; /* Optional: Add some margin below the heading */
+}
+
+h1 {
+    text-align: center;
+    color: black; /* Text color for better contrast */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.content-creator {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #f9f9f9; /* Text color for better contrast */
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none; /* Remove default border */
+    border-radius: 12px; /* Round the corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    color: rgb(255, 255, 255); /* Set text color to black for readability */
+    transition: border-color 0.3s, backdrop-filter 0.3s; /* Add transition for smooth effect */
+    backdrop-filter: blur(8px); /* Apply blur effect for glassy look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #ac67cb; /* Keep the focus border color */
+    outline: none;
+}
+
+button {
+    background-color: #88388e;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a456a9;
+}
+
+
+#generatedContent {
+    margin-top: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.2); /* More transparent for a stronger glass effect */
+    padding: 10px;
+    border-radius: 12px; /* Round the corners */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Add shadow for depth */
+    backdrop-filter: blur(8px); /* Apply blur effect for glassy look */
+    border: none; /* Remove default border */
+    color: rgb(255, 255, 255); /* Set text color for readability */
+    transition: backdrop-filter 0.3s; /* Add transition for smooth effect */
+}
+
+#generatedContent button {
+    background-color: rgba(136, 56, 142, 0.8); /* Semi-transparent purple for buttons inside generated content */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    backdrop-filter: blur(6px); /* Apply blur effect for a cohesive glassy look */
+}
+
+#generatedContent button:hover {
+    background-color: rgba(165, 86, 169, 0.8); /* Semi-transparent hover color */
+}
+
