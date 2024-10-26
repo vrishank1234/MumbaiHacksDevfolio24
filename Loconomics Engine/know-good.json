@@ -1,0 +1,4 @@
+[
+    {"user_id": 1, "preferences": "Books", "region": "North"},
+    {"user_id": 2, "preferences": "Clothing", "region": "South"}
+]

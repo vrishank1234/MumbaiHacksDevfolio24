@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        select, input, button {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form id="recommendation-form" enctype="multipart/form-data">
+        <label for="region">Enter Region:</label>
+    <input type="text" name="region" id="region" placeholder="Enter your region" required />
+
+       
+    
+        <label for="json_file">Upload JSON File:</label>
+        <input type="file" name="json_file" id="json_file" accept=".json" required />
+    
+        <button type="submit">Get Recommendations</button>
+    </form>
+    
+    <ul id="recommendation-list" style="margin-top: 20px;"></ul>
+    <div id="response" style="margin-top: 20px;"></div>
+
+    <!-- Only one script tag is needed here -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
